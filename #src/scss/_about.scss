@@ -1,0 +1,12 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 1240px;
+  margin: 0 auto;
+
+  &__logo {
+    margin-top: 30px;
+  }
+}
