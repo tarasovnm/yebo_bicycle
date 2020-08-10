@@ -1,6 +1,8 @@
 @import "_mixins/font-face";
 
-@include font("Calibri", "Calibri");
+@include font("Lato", "Lato-Regular");
+@include font("Lato", "Lato-Italic", 400, italic);
+@include font("Lato", "Lato-Bold", 700);
 
 /* примеры подключения шрифтов 
 @include font("Kaushan Script", "KaushanScript-Regular/KaushanScript-Regular");
