@@ -7,4 +7,3 @@ menuToggle.addEventListener('click', function (evt) {
   menuToggle.classList.toggle('active');
   pageBody.classList.toggle('lock');
 });
-
