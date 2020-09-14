@@ -312,3 +312,73 @@
     }
   }
 }
+
+.slider {
+  margin: 0;
+  padding: 0;
+  padding-top: 95px;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 27px;
+
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      margin-left: -23.5px;
+
+      background-image: url("../img/twitter-icon.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #353738;
+  }
+
+  &__time {
+    font-weight: 300;
+    color: #848789;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    font-style: italic;
+    color: #848789;
+  }
+
+  .slick-dots {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    li {
+      button {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 11px;
+        height: 11px;
+        font-size: 0;
+        border: 1px solid #c9c9c9;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+    }
+  }
+}

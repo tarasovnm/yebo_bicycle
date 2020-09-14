@@ -7,3 +7,11 @@ menuToggle.addEventListener('click', function (evt) {
   menuToggle.classList.toggle('active');
   pageBody.classList.toggle('lock');
 });
+
+$('.slider').slick({
+  dots: true,
+  arrows: false,
+  slidesToShow: 1,
+  autoplaySpeed: 3000,
+  adaptiveHeight: true
+});
