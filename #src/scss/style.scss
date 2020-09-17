@@ -18,6 +18,8 @@
   background-position: center center;
 }
 
+//===========================================================
+
 .main-nav {
   position: relative;
   display: flex;
@@ -33,6 +35,8 @@
     z-index: 50;
   }
 }
+
+//===========================================================
 
 .menu {
   &__icon {
@@ -180,6 +184,8 @@
   }
 }
 
+//===========================================================
+
 .new-generation {
   padding: 115px 0 135px 0;
   background-color: #f7f7f7;
@@ -188,6 +194,8 @@
     padding: 45px 0 55px 0;
   }
 }
+
+//===========================================================
 
 .block {
   text-align: center;
@@ -228,7 +236,17 @@
       }
     }
   }
+
+  @media (max-width: 1500px) {
+    &__text {
+      &--col {
+        padding-bottom: 20px;
+      }
+    }
+  }
 }
+
+//===========================================================
 
 .brands {
   &__row {
@@ -311,7 +329,35 @@
       background-image: url("../img/brand-3/photo-2.jpg");
     }
   }
+
+  @media (max-width: 1500px) {
+    &__content {
+      padding: 40px 35px 30px 35px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__column {
+      width: 100%;
+
+      &--brand-3-2 {
+        padding: 70% 0 0 0;
+
+        background-position: center top;
+      }
+    }
+
+    &__link {
+      padding: 30% 0;
+    }
+  }
 }
+
+//===========================================================
 
 .slider {
   margin: 0;
@@ -393,13 +439,30 @@
       }
     }
   }
+
+  @media (max-width: 1500px) {
+    padding-top: 65px;
+
+    .slick-dots {
+      margin: 35px 0 55px 0;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding-top: 35px;
+
+    .slick-dots {
+      margin: 25px 0 55px 0;
+    }
+  }
 }
+
+//===========================================================
 
 .shop {
   &__body {
     display: flex;
     align-items: stretch;
-    height: 534px;
   }
 
   &__column {
@@ -408,7 +471,7 @@
     justify-content: stretch;
     flex-wrap: wrap;
     width: 33.333%;
-    height: 100%;
+    height: 534px;
 
     background-color: red;
 
@@ -483,7 +546,33 @@
       background-color: #ffffff;
     }
   }
+
+  @media (max-width: 1000px) {
+    &__body {
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      width: 100%;
+
+      &--slim {
+        width: 50%;
+      }
+    }
+
+    &__footer {
+      padding: 50px 0;
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__button {
+      width: 280px;
+    }
+  }
 }
+
+//===========================================================
 
 .subscribe {
   padding: 110px 0;
@@ -499,14 +588,15 @@
 
   &__form {
     display: flex;
-    width: 534px;
+    max-width: 534px;
     height: 69px;
     margin: 0 auto;
     justify-content: space-between;
   }
 
   &__input {
-    width: 400px;
+    flex-grow: 1;
+    margin-right: 8px;
     border: 1px solid #d3d7d9;
 
     input {
@@ -542,7 +632,33 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 500px) {
+    &__form {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &__input {
+      padding: 20px 25px;
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+
+    &__button {
+      width: 100%;
+      button {
+        padding: 20px 0;
+      }
+    }
+  }
 }
+
+//===========================================================
 
 .footer {
   padding: 95px 0 100px 0;
@@ -578,6 +694,27 @@
 
   &__copyright {
     width: 285px;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 55px 0 60px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 35px 0 30px 0;
+
+    &__body {
+      flex-direction: column;
+    }
+
+    &__address {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__socials {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -621,5 +758,9 @@
     line-height: 17.87px;
     color: #848789;
     font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
   }
 }
