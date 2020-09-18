@@ -481,6 +481,7 @@
   }
 
   &__link {
+    position: relative;
     display: block;
     width: 100%;
     background-repeat: no-repeat;
@@ -520,6 +521,40 @@
 
     &--8 {
       background-image: url("../img/shop-now/photo-8.jpg");
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba($color: $accent-color, $alpha: 0.8);
+    opacity: 0;
+  }
+
+  &__now {
+    width: 100px;
+    height: 55px;
+    padding-top: 39px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.5px;
+
+    background-image: url("../img/shop-now/icon.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__link:hover {
+    .shop__logo {
+      opacity: 1;
     }
   }
 
